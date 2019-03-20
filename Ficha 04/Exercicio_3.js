@@ -31,7 +31,6 @@ function addNewObject() {
 addNewObject();
 
 // c
-
 function averageGrades() {
     let sum = "";
     for (const object of grades) {
@@ -41,3 +40,14 @@ function averageGrades() {
 }
 
 averageGrades();
+
+// d
+function positiveNames() {
+    let name = "";
+    for (const positive in grades) {
+        if (grades.grade >= 10) {
+            name += positive.name;
+        }
+    }
+    console.log(name);
+}
