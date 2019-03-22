@@ -42,12 +42,12 @@ function averageGrades() {
 averageGrades();
 
 // d
-function positiveNames() {
+function positiveGrades() {
     let name = "";
     for (const positive in grades) {
-        if (grades.grade >= 10) {
-            name += positive.name;
+        if (positive.grade >= 10) {
+            console.log(name);
         }
     }
-    console.log(name);
 }
+positiveGrades();

@@ -1,28 +1,25 @@
 function multiplyNumeric() {
-    let count = 0;
-    let menu = {
-        width: 200,
-        height: 300,
-        title: "My menu"
-    };
 
-    for (const prop in menu) {
-        count++;
+    let multi = 0;
+    for (const key in menu) {
+        if (typeof(menu[key]) == "number"){
+            multi = menu[key] * 2;
+        }
+        console.log(multi);
     }
-    console.log(count);
+    
 }
 
-multiplyNumeric();
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+}
 
-function multiplyNumeric() {
-    menu = {
+multiplyNumeric(menu);
+
+ menu = {
         width: 400,
         height: 600,
         title: "My menu"
-    };
-
-    for (const prop in menu) {
-        count++;
-    }
-    console.log(count);
 }

@@ -1,14 +1,13 @@
-function isEmpty() { }
-
-for (const obj of isEmpty) {
-    let schedule = "";
-    if (schedule === "") {
-        alert(isEmpty(schedule));
+function isEmpty(obj) {
+    for (const key of obj) {
+        if (obj.hasOwnProperty(key)) {
+            return false
+        }
     }
-    else {
-        alert(isEmpty(schedule));
-    }
+    return false
 }
+let schedule = {};
+console.log(isEmpty(schedule));
 
-isEmpty(obj);
-
+schedule["8:30"] = "Get Up";
+console.log(isEmpty(schedule));

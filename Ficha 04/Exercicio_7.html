@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="formFilm">
+        <label>Título do Filme:</label>
+        <input id="title" type="text" required>
+        <br>
+        <label>Género de Filmes:</label>
+        <select id="genre">
+            <option value="comedy">Comédia</option>
+            <option value="action">Ação</option>
+            <option value="adventure">Aventura</option>
+            <option value="terror">Terror</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="other">Outro</option>
+        </select>
+        <br>
+        <label>Ano do Filme:</label>
+        <input id="year" type="number" required>
+        <br>
+        <label>Capa do Filme:</label>
+        <input id="cover" type="url" required>
+        <br>
+        <label>Trailer do Filme:</label>
+        <input id="trailer" type="url" required>
+        <br>
+        <input type="submit" value="Submeter pedido">
+        <input type="reset" value="reset">
+    </form>
+    <hr>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Género</th>
+            <th>Capa</th>
+            <th>Trailer</th>
+        </tr>
+    </table>
+
+    <script src="Exercicio_7.js"></script>
+</body>
+
+</html>

@@ -11,3 +11,4 @@ function sumSalaries() {
     }
     console.log(sum);
 }
+sumSalaries();
