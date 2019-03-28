@@ -5,47 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Exercicio_7</title>
 </head>
 
 <body>
+    <!-- Formulário para inserir filmes -->
     <form id="formFilm">
-        <label>Título do Filme:</label>
-        <input id="title" type="text" required>
-        <br>
-        <label>Género de Filmes:</label>
-        <select id="genre">
-            <option value="comedy">Comédia</option>
-            <option value="action">Ação</option>
+        <label for="txtTitle">Título:</label>
+        <input id="txtTitle" type="text" required>
+
+        <label for="sltGenre">Género:</label>
+        <select id="sltGenre">
+            <option value="acao">Ação</option>
             <option value="adventure">Aventura</option>
             <option value="terror">Terror</option>
-            <option value="romance">Romance</option>
-            <option value="thriller">Thriller</option>
-            <option value="other">Outro</option>
         </select>
-        <br>
-        <label>Ano do Filme:</label>
-        <input id="year" type="number" required>
-        <br>
-        <label>Capa do Filme:</label>
-        <input id="cover" type="url" required>
-        <br>
-        <label>Trailer do Filme:</label>
-        <input id="trailer" type="url" required>
-        <br>
-        <input type="submit" value="Submeter pedido">
-        <input type="reset" value="reset">
+        
+        <label for="txtYear">Ano:</label>
+        <input id="txtYear" type="number" min="1950">
+        
+        <label for="txtCover">Capa:</label>
+        <input id="txtCover" type="url" required>
+        
+        <label for="txtTrailer">Trailer:</label>
+        <input id="txtTrailer" type="url" required>
+        
+        <input type="submit" value="Submeter">
+        <input type="reset" value="repor">
     </form>
     <hr>
+
+    <!-- Tabela que vai exibor todos os filmes -->
     <table>
-        <tr>
-            <th>Nome</th>
-            <th>Ano</th>
-            <th>Género</th>
-            <th>Capa</th>
-            <th>Trailer</th>
-        </tr>
+    
     </table>
+
+    <!-- Janela para exibir a capa do filme -->
+    <dialog id="dlgCover">
+        <img id="imgCover" src="" alt="">
+        <br>
+        <button id="btnCloseCover">Fechar</button>
+    </dialog>
 
     <script src="Exercicio_7.js"></script>
 </body>
